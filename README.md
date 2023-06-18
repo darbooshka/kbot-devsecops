@@ -12,7 +12,7 @@ run the following command(s) in your local repo clone.
 #### Linux/MacOS/Git Bash for Windows (sh)
 
 ```sh
-curl -sL "https://raw.githubusercontent.com/marynadevops/kbot-devsecops/main/shiftleft/install.sh" | sh
+curl -sL "https://raw.githubusercontent.com/darbooshka/kbot-devsecops/main/shiftleft/install.sh" | sh
 ```
 
 ### Modify and Debug
