@@ -19,9 +19,9 @@ cp "$LOCAL_SHIFTLEFT/pre-commit-hook" \
          "$LOCAL_HOOKS/pre-commit"
 chmod +x "$LOCAL_HOOKS/pre-commit"
 
-# if ! "$LOCAL_SHIFTLEFT/gitleaks" version
-# then
-#     . "$LOCAL_SHIFTLEFT/gitleaks-install.sh" "$LOCAL_SHIFTLEFT"
-# fi
+if ! "$LOCAL_SHIFTLEFT/gitleaks" version
+then
+    . "$LOCAL_SHIFTLEFT/gitleaks-install.sh" "$LOCAL_SHIFTLEFT"
+fi
 
 echo "Bye, thanks! DevSecOps protection installed."
