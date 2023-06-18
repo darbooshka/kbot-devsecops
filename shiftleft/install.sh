@@ -15,13 +15,13 @@ rm -rf                                                   "$LOCAL_DEVSECOPS"
 git clone https://github.com/darbooshka/$GIT_REPO_NAME   "$LOCAL_DEVSECOPS"
 rm -rf                                                   "$LOCAL_DEVSECOPS/.git"
 
+cp "$LOCAL_SHIFTLEFT/pre-commit-hook" \
+         "$LOCAL_HOOKS/pre-commit"
+chmod +x "$LOCAL_HOOKS/pre-commit"
 
-
-
-
-
-
-
-
+# if ! "$LOCAL_SHIFTLEFT/gitleaks" version
+# then
+#     . "$LOCAL_SHIFTLEFT/gitleaks-install.sh" "$LOCAL_SHIFTLEFT"
+# fi
 
 echo "Bye, thanks! DevSecOps protection installed."
