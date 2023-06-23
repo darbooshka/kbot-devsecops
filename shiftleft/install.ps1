@@ -1,4 +1,4 @@
-# @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/marynadevops/kbot-devsecops/main/shiftleft/install.ps1'))"
+# @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/darbooshka/kbot-devsecops/main/shiftleft/install.ps1'))"
 
 echo "Hello! I am DevSecOps protection installer (PowerShell)."
 
@@ -12,7 +12,7 @@ $LOCAL_SHIFTLEFT = "$LOCAL_DEVSECOPS\shiftleft".Replace('\', '/')
 echo "`"$LOCAL_HOOKS`""
 echo "`"$LOCAL_DEVSECOPS`""
 rm -r -fo $LOCAL_DEVSECOPS
-git clone https://github.com/marynadevops/$GIT_REPO_NAME $LOCAL_DEVSECOPS
+git clone https://github.com/darbooshka/$GIT_REPO_NAME $LOCAL_DEVSECOPS
 rm -r -fo "$LOCAL_DEVSECOPS\.git"
 
 cp "$LOCAL_SHIFTLEFT/pre-commit-hook" `
