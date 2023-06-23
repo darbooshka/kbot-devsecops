@@ -14,7 +14,7 @@ LOCAL_SHIFTLEFT=$LOCAL_HOOKS/kbot-devsecops/shiftleft
 SOURCE_PATH=$(git rev-parse --show-toplevel)
 echo "$SOURCE_PATH"
 
-if ! "$LOCAL_SHIFTLEFT/gitleaks" version
+if ! "$SCRIPT_DIR/gitleaks" version 2>/dev/null
 then
     . "$LOCAL_SHIFTLEFT/gitleaks-install.sh" "$LOCAL_SHIFTLEFT"
 fi
